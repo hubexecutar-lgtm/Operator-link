@@ -1,0 +1,172 @@
+metadata:
+  ID: EXECUTAR-WORKBOOK-ADAPTACAO-001
+  VERSION: 1.0.0
+  AREA: Governança documental e execução
+  WORKFLOW: Inventariar → Mapear → Especificar → Migrar → Verificar
+  OWNER: A DEFINIR
+  STATUS: PREPARED
+  AUTOMATION_LEVEL: A1
+  EVIDENCE:
+  - 00_ORIGINAL_EXECUTAR_projetosaasentrypoint_EXPANDIDO.xlsx
+  - WORKBOOK INDEX.txt
+  HANDOFF: Implementação futura da adaptação; não executada neste pacote.
+contrato:
+  cenario: Converter um entrypoint de projeto com 94 campos em controle de acervo, referência e execução.
+  resultado: Plano e contratos YAML implementáveis, mantendo a identidade dos registros originais.
+  incluido:
+  - Análise dos dois arquivos fornecidos
+  - Taxonomia de controle
+  - Mapeamento dos 94 campos
+  - Modelo de entidades e relações
+  - Plano de abas, validações e critérios de aceite
+  excluido:
+  - Alterar a planilha nesta etapa
+  - Preencher respostas
+  - Editar Google Drive
+  - Converter os seis documentos mencionados mas não fornecidos
+  - Produzir ou validar paginação de caderno A4
+  DEPENDS_ON:
+  - 00_ORIGINAL_EXECUTAR_projetosaasentrypoint_EXPANDIDO.xlsx
+  - WORKBOOK INDEX.txt
+  BLOCKS:
+  - Implementação da planilha adaptada
+  dados_ausentes: A DEFINIR
+evidencias_verificadas:
+  abas_originais: 10
+  dominios_originais: 17
+  ids_originais: 94
+  ids_duplicados: 0
+  ids_sem_formula_de_saida: 0
+  ids_sem_indice: 0
+  abas_protegidas: 0
+  validacoes_de_dados: 0
+  campos_de_resposta_preenchidos: 0
+  limite_formulas: 01_Formulario linhas 6:151
+  contador_atual: COUNTA(E6:E151), denominador fixo 94
+  limite_verificacao: Estrutura e referências inspecionadas; sem teste de recálculo em aplicativo Excel.
+arquitetura:
+  eixos_independentes:
+  - eixo: navegacao
+    origem: Rótulos AREA do TXT
+    regra: Preservar rótulos literais; número AREA não equivale ao código Axx.
+  - eixo: macroarea
+    origem: A00–A12
+    regra: Classificação temática transversal, uma principal e zero ou mais secundárias.
+  - eixo: dominio_legado
+    origem: 1–17
+    regra: Organização dos campos existentes; não renumerar para Axx.
+  - eixo: secao_operacional
+    origem: 01–07 no caderno
+    regra: Organiza a leitura e impressão; não é fase ou estado da tarefa.
+  - eixo: camada_documental
+    origem: Acervo integral / Manual de referência / Caderno operacional
+    regra: Uma unidade pode aparecer em várias camadas; registrar cada ocorrência.
+  fonte_unica_por_entidade:
+    respostas_legadas: 01_Formulario
+    classificacao_legada: 10_Mapeamento
+    registros_documentais: 11_Registros
+    localizacoes_e_destinos: 12_Cobertura
+    relacoes: 13_Relacoes
+    fichas_de_execucao: 14_Execucao
+    evidencias: 15_Evidencias
+    historico: 16_Historico
+    catalogos: 17_Catalogos
+  visoes_derivadas:
+  - Abas originais 02–08 permanecem
+  - 18_Hub organiza navegação e filtros
+  - 19_Caderno usa apenas registros operacionais selecionados
+  - '20_Auditoria é terminal: seus resultados não alimentam regras de execução'
+gaps_e_conflitos:
+- id: GAP-001
+  tipo: LACUNA
+  evidencia: TXT menciona seis arquivos não anexados.
+  impacto: Bloqueia preservação integral do acervo e migração de conteúdo.
+  status: BLOCKED
+  resolucao: Inventariar os originais quando disponíveis; não inventar registros.
+- id: GAP-002
+  tipo: AMBIGUIDADE
+  evidencia: AREA 04 Engenharia difere de A04; AREA 06 Estudos difere de A06.
+  impacto: Bloqueia somente uma equivalência automática entre navegação e macroáreas.
+  status: A DEFINIR
+  resolucao: Manter namespaces distintos; usar vínculos explícitos.
+- id: GAP-003
+  tipo: LACUNA
+  evidencia: AREA DE AGENTES, AREA 0PLANO..., COMANDOS e SESSAO 0 têm rótulos incompletos ou sem numeração estável.
+  impacto: Não usar esses rótulos como chaves únicas.
+  status: A DEFINIR
+  resolucao: Criar chave interna e preservar rótulo original e localização.
+- id: GAP-004
+  tipo: DUPLICIDADE
+  evidencia: Índice do caderno e instruções de três camadas reaparecem no TXT.
+  impacto: Risco de apagar diferenças ao consolidar.
+  status: PREPARED
+  resolucao: Registrar cada ocorrência e comparar antes de consolidar.
+- id: GAP-005
+  tipo: COBERTURA
+  evidencia: A07 Corporativo tem poucos campos correspondentes no legado.
+  impacto: Mapeamento não substitui levantamento de requisitos corporativos.
+  status: A DEFINIR
+  resolucao: Criar novos campos somente após identificar necessidade concreta.
+plano:
+- id: MIG-01
+  acao: Registrar baseline e catálogo literal de navegação
+  DEPENDS_ON: []
+  saida: Inventário com hashes, IDs e localizações.
+  aceite: 94 IDs preservados e dois arquivos rastreáveis.
+  estado: READY
+- id: MIG-02
+  acao: Implementar tabelas e validações do contrato
+  DEPENDS_ON:
+  - MIG-01
+  saida: Estrutura de controle sem preenchimentos fictícios.
+  aceite: Chaves únicas, enums e referências validadas.
+  estado: NOT_READY
+- id: MIG-03
+  acao: Aplicar classificação dos 94 campos
+  DEPENDS_ON:
+  - MIG-02
+  saida: 10_Mapeamento preenchida com propostas e origem.
+  aceite: 94 campos, zero órfãos, nenhuma renumeração.
+  estado: NOT_READY
+- id: MIG-04
+  acao: Inventariar unidades documentais e cobertura
+  DEPENDS_ON:
+  - MIG-03
+  precondicao: Originais do acervo disponíveis para conversão.
+  saida: 11_Registros, 12_Cobertura e conflitos.
+  aceite: Cada unidade tem origem e destino; ausência explicitada.
+  estado: BLOCKED
+  bloqueio: GAP-001
+- id: MIG-05
+  acao: Preparar fichas operacionais e grafo de dependências
+  DEPENDS_ON:
+  - MIG-04
+  saida: Fichas com entrada, até três passos, saída, aceite e evidência.
+  aceite: Grafo sem ciclos de bloqueio e WIP=1 por escopo.
+  estado: NOT_READY
+- id: MIG-06
+  acao: Construir Hub e visão de impressão
+  DEPENDS_ON:
+  - MIG-05
+  saida: 18_Hub e 19_Caderno com referências para aprofundamento.
+  aceite: A4 legível; páginas ajustadas ao conteúdo; sem perda ou truncamento.
+  estado: NOT_READY
+- id: MIG-07
+  acao: Verificar migração e registrar handoff
+  DEPENDS_ON:
+  - MIG-06
+  saida: 20_Auditoria e checkpoint final.
+  aceite: Fórmulas, referências, cobertura, estados e impressão verificados.
+  estado: NOT_READY
+criterios_globais:
+- Preservar valores, IDs, orientações, exemplos e fórmulas do legado.
+- Não consolidar divergências silenciosamente.
+- Nenhuma unidade inventariada sem destino rastreável.
+- Não confundir evidência citada com verificada.
+- VERIFIED exige critério atendido e evidência verificada vinculada.
+- Mudanças no baseline devem constar no histórico.
+fontes:
+- arquivo: 00_ORIGINAL_EXECUTAR_projetosaasentrypoint_EXPANDIDO.xlsx
+  sha256: b43fa7359bc296b34a061c64bb5019f3e65f95b1f7ccb4cc451935b17108ac71
+- arquivo: WORKBOOK INDEX.txt
+  sha256: a0df14143650f0ed49989b938e69e52c4fce62c068b573f086c91fb4d2084488

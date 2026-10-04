@@ -1,0 +1,12 @@
+* text=auto eol=lf
+*.csv text eol=lf
+*.yaml text eol=lf
+*.md text eol=lf
+*.xlsx binary
+*.docx binary
+*.pdf binary
+*.zip binary
+*.png binary
+*.jpg binary
+10_acervo_integral/fontes/** -text
+01_indice/*.csv -text

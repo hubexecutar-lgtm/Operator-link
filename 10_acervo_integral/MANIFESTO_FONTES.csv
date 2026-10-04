@@ -1,0 +1,5 @@
+fonte_id,nome,uri_ou_caminho,sha256,disponibilidade,observacao
+SRC-000001,00_ORIGINAL_EXECUTAR_projetosaasentrypoint_EXPANDIDO.xlsx,A DEFINIR,b43fa7359bc296b34a061c64bb5019f3e65f95b1f7ccb4cc451935b17108ac71,INDISPONIVEL,Hash citado em 00_PLANO_ADAPTACAO.yaml; arquivo não versionado neste repositório
+SRC-000002,WORKBOOK INDEX.txt,A DEFINIR,a0df14143650f0ed49989b938e69e52c4fce62c068b573f086c91fb4d2084488,INDISPONIVEL,Hash citado em 00_PLANO_ADAPTACAO.yaml; arquivo não versionado neste repositório
+SRC-000003,EXECUTAR_WORKBOOK_SCHEMAS_v1.0.0.zip,10_acervo_integral/fontes/EXECUTAR_WORKBOOK_SCHEMAS_v1.0.0.zip,4369c465775b0b37bd0914b6f3c9f8076d433077a041e089443ecec69136c1f4,DISPONIVEL,Pacote original; conteúdo extraído em 02_schemas/v1.0.0
+SRC-000004,EXECUTAR_WORKBOOK_MASTER_INDEX_GRANULAR_v1.0.0.csv,01_indice/EXECUTAR_WORKBOOK_MASTER_INDEX_GRANULAR_v1.0.0.csv,0947574e1700acefcc2e90649e7d8b26bc4c7061650d63d3f566a68dea1a0b29,DISPONIVEL,Índice mestre granular (168 linhas)

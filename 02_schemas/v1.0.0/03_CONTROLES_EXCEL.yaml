@@ -1,0 +1,226 @@
+metadata:
+  ID: EXECUTAR-WORKBOOK-CONTROLES-001
+  VERSION: 1.0.0
+  STATUS: PREPARED
+catalogos:
+  macroareas:
+  - id: A00
+    nome: Governança Estratégia e Gestão
+  - id: A01
+    nome: Negócio e Go to Market
+  - id: A02
+    nome: Produto e Experiência
+  - id: A03
+    nome: Handoff Produto para Engenharia
+  - id: A04
+    nome: Arquitetura Engenharia e Implementação
+  - id: A05
+    nome: Operações Plataforma e Segurança
+  - id: A06
+    nome: Dados Pesquisa e Conhecimento
+  - id: A07
+    nome: Corporativo e Suporte
+  - id: A08
+    nome: Conteúdo Comunicação e Growth
+  - id: A09
+    nome: Execução e Planejamento do Trabalho
+  - id: A10
+    nome: Documentação e Governança do Conhecimento
+  - id: A11
+    nome: Ferramentas IA e Ativos Reutilizáveis
+  - id: A12
+    nome: Stakeholders e Ecossistema
+  secoes_operacionais:
+  - id: COP-S01
+    numero_original: '01'
+    nome: Comece aqui
+    id_proposto: true
+  - id: COP-S02
+    numero_original: '02'
+    nome: Direção estratégica
+    id_proposto: true
+  - id: COP-S03
+    numero_original: '03'
+    nome: Entregas e dependências
+    id_proposto: true
+  - id: COP-S04
+    numero_original: '04'
+    nome: Fichas de execução
+    id_proposto: true
+  - id: COP-S05
+    numero_original: '05'
+    nome: Produção editorial
+    id_proposto: true
+  - id: COP-S06
+    numero_original: '06'
+    nome: Verificação e retomada
+    id_proposto: true
+  - id: COP-S07
+    numero_original: '07'
+    nome: Referências
+    id_proposto: true
+  camadas:
+  - ACERVO_INTEGRAL
+  - MANUAL_REFERENCIA
+  - CADERNO_OPERACIONAL
+  id_policies:
+    legados: 'Texto, imutável: domínio.campo; nunca converter em decimal.'
+    macroareas: Preservar A00–A12.
+    novos_registros: REG-000001; chave imutável; parent_id guarda hierarquia.
+    outras_chaves: NAV/SRC/COV/REL/EVD/EVT com seis dígitos sequenciais.
+    subids: parent_id representa subunidade. Não reutilizar ID de campo como ID de tarefa.
+    alocacao: Registro central; unicidade validada antes de salvar; não gerar por número da linha.
+    identidade_escopo: REG IDs únicos no workbook; referências externas exigem workbook_id e registro_id.
+    novos_campos_legados: Manter domínios 1–17. Novos domínios a partir de 18, se realmente necessários.
+abas_originais:
+  preservar:
+  - 00_Leia-me
+  - 01_Formulario
+  - 02_Visao_Geral
+  - 03_Arquitetura_Tecnica
+  - 04_Operacao_Seguranca
+  - 05_Gestao_Projetos
+  - 06_Roadmap_Editorial
+  - 07_Conhecimento_Stakeholders
+  - 08_Skills_Plataformas
+  - 09_Indice_IDs
+  01_Formulario: Continua dono das respostas dos 94 campos; novas entidades possuem seus próprios pontos de edição.
+  00_Leia_me: Atualizar instrução de única aba editável para listar os pontos de entrada por entidade. Registrar
+    mudança.
+  09_Indice_IDs: Manter estrutura e IDs; conferir destinos após alterações.
+  02_a_08: Preservar fórmulas e significado; não copiar respostas como valores fixos.
+abas_propostas:
+- aba: 10_Mapeamento
+  tabela: tblMapeamento
+  granularidade: Uma linha por ID legado
+  contrato: 02_MAPEAMENTO_94_IDS.yaml
+  status: PROPOSTO
+- aba: 11_Registros
+  tabela: tblRegistros
+  granularidade: Uma linha por unidade de conteúdo ou entidade
+  contrato: registro
+  status: PROPOSTO
+- aba: 12_Cobertura
+  tabela: tblCobertura
+  granularidade: Uma linha por origem e destino de unidade
+  contrato: cobertura
+  status: PROPOSTO
+- aba: 13_Relacoes
+  tabela: tblRelacoes
+  granularidade: Uma linha por relação tipada entre registros
+  contrato: relacao
+  status: PROPOSTO
+- aba: 14_Execucao
+  tabela: tblExecucao
+  granularidade: Uma linha por tarefa ou ação; registro_id é chave estrangeira única
+  contrato: execucao
+  status: PROPOSTO
+- aba: 15_Evidencias
+  tabela: tblEvidencias
+  granularidade: Uma linha por afirmação e fonte
+  contrato: evidencia
+  status: PROPOSTO
+- aba: 16_Historico
+  tabela: tblHistorico
+  granularidade: Uma linha por evento, append-only
+  contrato: historico
+  status: PROPOSTO
+- aba: 17_Catalogos
+  tabela: catalogos
+  granularidade: Tabelas independentes para macroáreas, navegação, seções, fontes e enums
+  contrato: navegacao/fonte
+  status: PROPOSTO
+- aba: 18_Hub
+  tabela: null
+  granularidade: Visão derivada de navegação e próxima ação
+  contrato: visao
+  status: PROPOSTO
+- aba: 19_Caderno
+  tabela: null
+  granularidade: Visão derivada imprimível; não é fonte de dados
+  contrato: visao
+  status: PROPOSTO
+- aba: 20_Auditoria
+  tabela: null
+  granularidade: Diagnóstico terminal independente
+  contrato: auditoria
+  status: PROPOSTO
+serializacao_excel:
+  arrays: Normalizar em tabelas auxiliares com chave estrangeira; não separar IDs por vírgula.
+  tabelas_auxiliares:
+  - Registro_Macroarea(registro_id, macroarea_id, papel)
+  - Registro_Secao(registro_id, secao_id)
+  - Registro_Nav(registro_id, nav_id)
+  - Registro_Origem(registro_id, fonte_id, localizador)
+  - Registro_Legado(registro_id, legacy_id)
+  - Execucao_Input(registro_id, ordem, entrada)
+  - Execucao_Evidencia(registro_id, evidencia_id)
+  passos: passo_1, passo_2, passo_3; converter na exportação para array ordenado.
+  'null': Célula vazia para parent_id raiz e tempo desconhecido; texto A DEFINIR para campos humanos desconhecidos.
+  datas: Valores tipados no Excel; exportação ISO 8601.
+  formulas: Preservar lookup exato pelo ID. Implementação futura deve testar referências estruturadas para evitar
+    limite fixo 151.
+  compatibilidade: Excel é o alvo proposto; suporte Numbers/LibreOffice permanece não verificado após adaptação.
+validacoes_entrada:
+- Enums por listas de validação.
+- IDs como texto; validação de padrão e unicidade.
+- Chaves estrangeiras somente para registros existentes.
+- Respostas e dados editáveis desbloqueados; fórmulas e IDs protegidos para reduzir edição acidental.
+- Proteção de planilha é controle de edição, não segurança de dados.
+integridade_entre_linhas:
+- regra: IDs únicos em cada entidade
+  metodo: Validador de dataset + diagnóstico no Excel.
+- regra: parent_id existente, sem autorreferência e sem ciclos
+  metodo: Travessia do grafo.
+- regra: 'DEPENDS_ON: origem depende do destino; ambas são tarefas/ações'
+  metodo: Validar tipos; ciclos bloqueiam READY.
+- regra: BLOCKS é inverso derivado de DEPENDS_ON
+  metodo: Não cadastrar arestas inversas redundantes.
+- regra: WIP=1
+  metodo: No máximo um IN_PROGRESS por escopo_wip_id.
+- regra: READY exige entradas presentes e dependências VERIFIED
+  metodo: Checagem de pré-condições no controlador de execução, independente de 20_Auditoria.
+- regra: VERIFIED exige todas as evidências vinculadas existentes e ao menos uma VERIFICADA
+  metodo: Cruzar execução e evidências; confirmar aceite ATENDIDO e identidade do registro.
+- regra: Owner A DEFINIR pode existir em PREPARED, mas bloqueia início de execução
+  metodo: Precondição de IN_PROGRESS.
+- regra: Cobertura total do inventário
+  metodo: Cada unidade tem origem e ao menos um destino VERIFICADO; unidades omitidas do caderno ficam no manual/acervo.
+- regra: Consolidação rastreável
+  metodo: Registro consolidado mantém origens e relações CONSOLIDA para cada unidade original.
+- regra: Conflitos não resolvidos
+  metodo: Bloquear apenas tarefas cujo requisito é afetado pelo conflito; não bloquear o workbook inteiro.
+maquina_estados:
+  NOT_READY:
+  - READY
+  - BLOCKED
+  READY:
+  - IN_PROGRESS
+  - NOT_READY
+  - BLOCKED
+  IN_PROGRESS:
+  - DECLARED_DONE
+  - BLOCKED
+  BLOCKED:
+  - NOT_READY
+  - READY
+  DECLARED_DONE:
+  - VERIFIED
+  - IN_PROGRESS
+  - BLOCKED
+  VERIFIED:
+  - NOT_READY
+  reabertura: VERIFIED → NOT_READY requer evento com motivo e revisão do aceite.
+metrica_preenchimento: Contar respostas somente nos 94 IDs catalogados; denominador calculado do catálogo. Não contar
+  notas fora de registros.
+metrica_execucao: Tarefas VERIFIED / total de tarefas do escopo; distinta do preenchimento.
+regras_impressao:
+  papel: A4
+  margem_e_fonte: A DEFINIR na implementação, após render de teste.
+  regras:
+  - Repetir cabeçalhos em tabelas longas.
+  - Impedir cortes de texto e colunas.
+  - Não diminuir fonte para cumprir número artificial de páginas.
+  - Reservar espaço para anotações.
+  - Cada ficha contém ID e referências ao manual/acervo.
+  aceite: Renderizar todas as páginas e verificar overflow; não realizado neste pacote.

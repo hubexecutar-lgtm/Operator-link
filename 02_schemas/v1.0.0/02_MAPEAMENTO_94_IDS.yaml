@@ -1,0 +1,1192 @@
+metadata:
+  ID: EXECUTAR-WORKBOOK-MAPEAMENTO-001
+  VERSION: 1.0.0
+  STATUS: PREPARED
+  OWNER: A DEFINIR
+regras:
+- Classificações propostas; IDs e nomes são extraídos literalmente da planilha.
+- Macroáreas e seções não substituem domínios originais.
+- A lista de campos não inventaria os seis documentos ausentes.
+total_campos: 94
+campos:
+- id: '1.1'
+  nome: Problema central
+  localizacao: 01_Formulario!B8:F8
+  dominio_original: 1
+  macroarea_principal_proposta: A01
+  macroareas_secundarias_propostas: []
+  secoes_operacionais_candidatas: &id001
+  - COP-S02
+  aba_derivada_original: 02_Visao_Geral
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '1.2'
+  nome: Público-alvo / ICP
+  localizacao: 01_Formulario!B9:F9
+  dominio_original: 1
+  macroarea_principal_proposta: A01
+  macroareas_secundarias_propostas: []
+  secoes_operacionais_candidatas: *id001
+  aba_derivada_original: 02_Visao_Geral
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '1.3'
+  nome: Proposta de valor
+  localizacao: 01_Formulario!B10:F10
+  dominio_original: 1
+  macroarea_principal_proposta: A01
+  macroareas_secundarias_propostas: []
+  secoes_operacionais_candidatas: *id001
+  aba_derivada_original: 02_Visao_Geral
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '1.4'
+  nome: Canais de aquisição
+  localizacao: 01_Formulario!B11:F11
+  dominio_original: 1
+  macroarea_principal_proposta: A01
+  macroareas_secundarias_propostas: []
+  secoes_operacionais_candidatas: *id001
+  aba_derivada_original: 02_Visao_Geral
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '1.5'
+  nome: Métrica North Star
+  localizacao: 01_Formulario!B12:F12
+  dominio_original: 1
+  macroarea_principal_proposta: A01
+  macroareas_secundarias_propostas:
+  - A06
+  secoes_operacionais_candidatas: *id001
+  aba_derivada_original: 02_Visao_Geral
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '1.6'
+  nome: Métricas guardrail
+  localizacao: 01_Formulario!B13:F13
+  dominio_original: 1
+  macroarea_principal_proposta: A01
+  macroareas_secundarias_propostas:
+  - A06
+  secoes_operacionais_candidatas: *id001
+  aba_derivada_original: 02_Visao_Geral
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '1.7'
+  nome: CAC (custo de aquisição)
+  localizacao: 01_Formulario!B14:F14
+  dominio_original: 1
+  macroarea_principal_proposta: A01
+  macroareas_secundarias_propostas:
+  - A07
+  secoes_operacionais_candidatas: *id001
+  aba_derivada_original: 02_Visao_Geral
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '1.8'
+  nome: LTV (valor do tempo de vida)
+  localizacao: 01_Formulario!B15:F15
+  dominio_original: 1
+  macroarea_principal_proposta: A01
+  macroareas_secundarias_propostas:
+  - A07
+  secoes_operacionais_candidatas: *id001
+  aba_derivada_original: 02_Visao_Geral
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '1.9'
+  nome: Margem por unidade/usuário
+  localizacao: 01_Formulario!B16:F16
+  dominio_original: 1
+  macroarea_principal_proposta: A01
+  macroareas_secundarias_propostas:
+  - A07
+  secoes_operacionais_candidatas: *id001
+  aba_derivada_original: 02_Visao_Geral
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '1.10'
+  nome: Ponto de equilíbrio (breakeven)
+  localizacao: 01_Formulario!B17:F17
+  dominio_original: 1
+  macroarea_principal_proposta: A01
+  macroareas_secundarias_propostas:
+  - A07
+  secoes_operacionais_candidatas: *id001
+  aba_derivada_original: 02_Visao_Geral
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '1.11'
+  nome: Teto de gasto de infraestrutura
+  localizacao: 01_Formulario!B18:F18
+  dominio_original: 1
+  macroarea_principal_proposta: A01
+  macroareas_secundarias_propostas:
+  - A05
+  - A07
+  secoes_operacionais_candidatas: *id001
+  aba_derivada_original: 02_Visao_Geral
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '1.12'
+  nome: Gatilhos de upgrade de infra
+  localizacao: 01_Formulario!B19:F19
+  dominio_original: 1
+  macroarea_principal_proposta: A01
+  macroareas_secundarias_propostas:
+  - A05
+  secoes_operacionais_candidatas: *id001
+  aba_derivada_original: 02_Visao_Geral
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '2.1'
+  nome: Nome do produto/feature
+  localizacao: 01_Formulario!B23:F23
+  dominio_original: 2
+  macroarea_principal_proposta: A02
+  macroareas_secundarias_propostas: []
+  secoes_operacionais_candidatas: &id002
+  - COP-S02
+  aba_derivada_original: 02_Visao_Geral
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '2.2'
+  nome: Contexto do PRD
+  localizacao: 01_Formulario!B24:F24
+  dominio_original: 2
+  macroarea_principal_proposta: A02
+  macroareas_secundarias_propostas: []
+  secoes_operacionais_candidatas: *id002
+  aba_derivada_original: 02_Visao_Geral
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '2.3'
+  nome: Objetivos (goals)
+  localizacao: 01_Formulario!B25:F25
+  dominio_original: 2
+  macroarea_principal_proposta: A02
+  macroareas_secundarias_propostas: []
+  secoes_operacionais_candidatas: *id002
+  aba_derivada_original: 02_Visao_Geral
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '2.4'
+  nome: Não-objetivos (non-goals)
+  localizacao: 01_Formulario!B26:F26
+  dominio_original: 2
+  macroarea_principal_proposta: A02
+  macroareas_secundarias_propostas: []
+  secoes_operacionais_candidatas: *id002
+  aba_derivada_original: 02_Visao_Geral
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '2.5'
+  nome: Requisitos funcionais (FRD)
+  localizacao: 01_Formulario!B27:F27
+  dominio_original: 2
+  macroarea_principal_proposta: A02
+  macroareas_secundarias_propostas:
+  - A03
+  secoes_operacionais_candidatas: *id002
+  aba_derivada_original: 02_Visao_Geral
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '2.6'
+  nome: Critérios de aceite
+  localizacao: 01_Formulario!B28:F28
+  dominio_original: 2
+  macroarea_principal_proposta: A02
+  macroareas_secundarias_propostas:
+  - A03
+  secoes_operacionais_candidatas: *id002
+  aba_derivada_original: 02_Visao_Geral
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '2.7'
+  nome: Persona principal
+  localizacao: 01_Formulario!B29:F29
+  dominio_original: 2
+  macroarea_principal_proposta: A02
+  macroareas_secundarias_propostas: []
+  secoes_operacionais_candidatas: *id002
+  aba_derivada_original: 02_Visao_Geral
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '2.8'
+  nome: Jornada — Descoberta
+  localizacao: 01_Formulario!B30:F30
+  dominio_original: 2
+  macroarea_principal_proposta: A02
+  macroareas_secundarias_propostas: []
+  secoes_operacionais_candidatas: *id002
+  aba_derivada_original: 02_Visao_Geral
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '2.9'
+  nome: Jornada — Ativação
+  localizacao: 01_Formulario!B31:F31
+  dominio_original: 2
+  macroarea_principal_proposta: A02
+  macroareas_secundarias_propostas: []
+  secoes_operacionais_candidatas: *id002
+  aba_derivada_original: 02_Visao_Geral
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '2.10'
+  nome: Jornada — Uso recorrente
+  localizacao: 01_Formulario!B32:F32
+  dominio_original: 2
+  macroarea_principal_proposta: A02
+  macroareas_secundarias_propostas: []
+  secoes_operacionais_candidatas: *id002
+  aba_derivada_original: 02_Visao_Geral
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '2.11'
+  nome: Momento 'aha'
+  localizacao: 01_Formulario!B33:F33
+  dominio_original: 2
+  macroarea_principal_proposta: A02
+  macroareas_secundarias_propostas: []
+  secoes_operacionais_candidatas: *id002
+  aba_derivada_original: 02_Visao_Geral
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '2.12'
+  nome: User story de referência
+  localizacao: 01_Formulario!B34:F34
+  dominio_original: 2
+  macroarea_principal_proposta: A02
+  macroareas_secundarias_propostas: []
+  secoes_operacionais_candidatas: *id002
+  aba_derivada_original: 02_Visao_Geral
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '3.1'
+  nome: Stack — Frontend
+  localizacao: 01_Formulario!B38:F38
+  dominio_original: 3
+  macroarea_principal_proposta: A04
+  macroareas_secundarias_propostas: []
+  secoes_operacionais_candidatas: &id003
+  - COP-S07
+  aba_derivada_original: 03_Arquitetura_Tecnica
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '3.2'
+  nome: Stack — Backend
+  localizacao: 01_Formulario!B39:F39
+  dominio_original: 3
+  macroarea_principal_proposta: A04
+  macroareas_secundarias_propostas: []
+  secoes_operacionais_candidatas: *id003
+  aba_derivada_original: 03_Arquitetura_Tecnica
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '3.3'
+  nome: Banco de dados
+  localizacao: 01_Formulario!B40:F40
+  dominio_original: 3
+  macroarea_principal_proposta: A04
+  macroareas_secundarias_propostas: []
+  secoes_operacionais_candidatas: *id003
+  aba_derivada_original: 03_Arquitetura_Tecnica
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '3.4'
+  nome: Infraestrutura / hosting
+  localizacao: 01_Formulario!B41:F41
+  dominio_original: 3
+  macroarea_principal_proposta: A04
+  macroareas_secundarias_propostas:
+  - A05
+  secoes_operacionais_candidatas: *id003
+  aba_derivada_original: 03_Arquitetura_Tecnica
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '3.5'
+  nome: Autenticação
+  localizacao: 01_Formulario!B42:F42
+  dominio_original: 3
+  macroarea_principal_proposta: A04
+  macroareas_secundarias_propostas:
+  - A05
+  secoes_operacionais_candidatas: *id003
+  aba_derivada_original: 03_Arquitetura_Tecnica
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '3.6'
+  nome: Estrutura de repositório
+  localizacao: 01_Formulario!B43:F43
+  dominio_original: 3
+  macroarea_principal_proposta: A04
+  macroareas_secundarias_propostas: []
+  secoes_operacionais_candidatas: *id003
+  aba_derivada_original: 03_Arquitetura_Tecnica
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '3.7'
+  nome: Mapa de rotas principais
+  localizacao: 01_Formulario!B44:F44
+  dominio_original: 3
+  macroarea_principal_proposta: A04
+  macroareas_secundarias_propostas: []
+  secoes_operacionais_candidatas: *id003
+  aba_derivada_original: 03_Arquitetura_Tecnica
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '3.8'
+  nome: 'Decisão de arquitetura #1 (ADR)'
+  localizacao: 01_Formulario!B45:F45
+  dominio_original: 3
+  macroarea_principal_proposta: A04
+  macroareas_secundarias_propostas:
+  - A10
+  secoes_operacionais_candidatas: *id003
+  aba_derivada_original: 03_Arquitetura_Tecnica
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '3.9'
+  nome: 'Decisão de arquitetura #2 (ADR)'
+  localizacao: 01_Formulario!B46:F46
+  dominio_original: 3
+  macroarea_principal_proposta: A04
+  macroareas_secundarias_propostas:
+  - A10
+  secoes_operacionais_candidatas: *id003
+  aba_derivada_original: 03_Arquitetura_Tecnica
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '3.10'
+  nome: Trade-offs aceitos
+  localizacao: 01_Formulario!B47:F47
+  dominio_original: 3
+  macroarea_principal_proposta: A04
+  macroareas_secundarias_propostas: []
+  secoes_operacionais_candidatas: *id003
+  aba_derivada_original: 03_Arquitetura_Tecnica
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '4.1'
+  nome: Modelo de dados / schema
+  localizacao: 01_Formulario!B51:F51
+  dominio_original: 4
+  macroarea_principal_proposta: A04
+  macroareas_secundarias_propostas:
+  - A03
+  secoes_operacionais_candidatas: &id004
+  - COP-S03
+  aba_derivada_original: 03_Arquitetura_Tecnica
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '4.2'
+  nome: Endpoints de API principais
+  localizacao: 01_Formulario!B52:F52
+  dominio_original: 4
+  macroarea_principal_proposta: A04
+  macroareas_secundarias_propostas:
+  - A03
+  secoes_operacionais_candidatas: *id004
+  aba_derivada_original: 03_Arquitetura_Tecnica
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '4.3'
+  nome: Agentes/Tools MCP integrados
+  localizacao: 01_Formulario!B53:F53
+  dominio_original: 4
+  macroarea_principal_proposta: A04
+  macroareas_secundarias_propostas:
+  - A11
+  secoes_operacionais_candidatas: *id004
+  aba_derivada_original: 03_Arquitetura_Tecnica
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '4.4'
+  nome: Dependências núcleo (obrigatórias)
+  localizacao: 01_Formulario!B54:F54
+  dominio_original: 4
+  macroarea_principal_proposta: A04
+  macroareas_secundarias_propostas: []
+  secoes_operacionais_candidatas: *id004
+  aba_derivada_original: 03_Arquitetura_Tecnica
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '4.5'
+  nome: Dependências condicionais
+  localizacao: 01_Formulario!B55:F55
+  dominio_original: 4
+  macroarea_principal_proposta: A04
+  macroareas_secundarias_propostas: []
+  secoes_operacionais_candidatas: *id004
+  aba_derivada_original: 03_Arquitetura_Tecnica
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '4.6'
+  nome: Política de atualização de dependências
+  localizacao: 01_Formulario!B56:F56
+  dominio_original: 4
+  macroarea_principal_proposta: A04
+  macroareas_secundarias_propostas: []
+  secoes_operacionais_candidatas: *id004
+  aba_derivada_original: 03_Arquitetura_Tecnica
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '4.7'
+  nome: Componente frontend principal
+  localizacao: 01_Formulario!B57:F57
+  dominio_original: 4
+  macroarea_principal_proposta: A04
+  macroareas_secundarias_propostas: []
+  secoes_operacionais_candidatas: *id004
+  aba_derivada_original: 03_Arquitetura_Tecnica
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '4.8'
+  nome: Testes automatizados
+  localizacao: 01_Formulario!B58:F58
+  dominio_original: 4
+  macroarea_principal_proposta: A04
+  macroareas_secundarias_propostas:
+  - A03
+  secoes_operacionais_candidatas: *id004
+  aba_derivada_original: 03_Arquitetura_Tecnica
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '5.1'
+  nome: Checklist pré-deploy
+  localizacao: 01_Formulario!B62:F62
+  dominio_original: 5
+  macroarea_principal_proposta: A05
+  macroareas_secundarias_propostas: []
+  secoes_operacionais_candidatas: &id005
+  - COP-S06
+  aba_derivada_original: 04_Operacao_Seguranca
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '5.2'
+  nome: Checks de saúde pós-deploy
+  localizacao: 01_Formulario!B63:F63
+  dominio_original: 5
+  macroarea_principal_proposta: A05
+  macroareas_secundarias_propostas: []
+  secoes_operacionais_candidatas: *id005
+  aba_derivada_original: 04_Operacao_Seguranca
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '5.3'
+  nome: Gatilho de rollback — taxa de erro
+  localizacao: 01_Formulario!B64:F64
+  dominio_original: 5
+  macroarea_principal_proposta: A05
+  macroareas_secundarias_propostas: []
+  secoes_operacionais_candidatas: *id005
+  aba_derivada_original: 04_Operacao_Seguranca
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '5.4'
+  nome: Gatilho de rollback — latência
+  localizacao: 01_Formulario!B65:F65
+  dominio_original: 5
+  macroarea_principal_proposta: A05
+  macroareas_secundarias_propostas: []
+  secoes_operacionais_candidatas: *id005
+  aba_derivada_original: 04_Operacao_Seguranca
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '5.5'
+  nome: Gatilho de rollback — fluxo crítico
+  localizacao: 01_Formulario!B66:F66
+  dominio_original: 5
+  macroarea_principal_proposta: A05
+  macroareas_secundarias_propostas: []
+  secoes_operacionais_candidatas: *id005
+  aba_derivada_original: 04_Operacao_Seguranca
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '5.6'
+  nome: Procedimento de rollback
+  localizacao: 01_Formulario!B67:F67
+  dominio_original: 5
+  macroarea_principal_proposta: A05
+  macroareas_secundarias_propostas: []
+  secoes_operacionais_candidatas: *id005
+  aba_derivada_original: 04_Operacao_Seguranca
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '6.1'
+  nome: Estratégia de branch
+  localizacao: 01_Formulario!B71:F71
+  dominio_original: 6
+  macroarea_principal_proposta: A00
+  macroareas_secundarias_propostas:
+  - A04
+  secoes_operacionais_candidatas: &id006
+  - COP-S07
+  aba_derivada_original: 04_Operacao_Seguranca
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '6.2'
+  nome: Gate humano obrigatório
+  localizacao: 01_Formulario!B72:F72
+  dominio_original: 6
+  macroarea_principal_proposta: A00
+  macroareas_secundarias_propostas: []
+  secoes_operacionais_candidatas: *id006
+  aba_derivada_original: 04_Operacao_Seguranca
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '6.3'
+  nome: Armazenamento de segredos
+  localizacao: 01_Formulario!B73:F73
+  dominio_original: 6
+  macroarea_principal_proposta: A05
+  macroareas_secundarias_propostas:
+  - A00
+  secoes_operacionais_candidatas: *id006
+  aba_derivada_original: 04_Operacao_Seguranca
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '6.4'
+  nome: Rotação de credenciais
+  localizacao: 01_Formulario!B74:F74
+  dominio_original: 6
+  macroarea_principal_proposta: A05
+  macroareas_secundarias_propostas:
+  - A00
+  secoes_operacionais_candidatas: *id006
+  aba_derivada_original: 04_Operacao_Seguranca
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '6.5'
+  nome: Riscos de segurança conhecidos
+  localizacao: 01_Formulario!B75:F75
+  dominio_original: 6
+  macroarea_principal_proposta: A05
+  macroareas_secundarias_propostas:
+  - A00
+  secoes_operacionais_candidatas: *id006
+  aba_derivada_original: 04_Operacao_Seguranca
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '6.6'
+  nome: Escopo de autonomia do agente de AI
+  localizacao: 01_Formulario!B76:F76
+  dominio_original: 6
+  macroarea_principal_proposta: A00
+  macroareas_secundarias_propostas:
+  - A11
+  secoes_operacionais_candidatas: *id006
+  aba_derivada_original: 04_Operacao_Seguranca
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '7.1'
+  nome: README existe?
+  localizacao: 01_Formulario!B80:F80
+  dominio_original: 7
+  macroarea_principal_proposta: A10
+  macroareas_secundarias_propostas: []
+  secoes_operacionais_candidatas: &id007
+  - COP-S07
+  aba_derivada_original: 04_Operacao_Seguranca
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '7.2'
+  nome: ADRs documentados
+  localizacao: 01_Formulario!B81:F81
+  dominio_original: 7
+  macroarea_principal_proposta: A10
+  macroareas_secundarias_propostas: []
+  secoes_operacionais_candidatas: *id007
+  aba_derivada_original: 04_Operacao_Seguranca
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '7.3'
+  nome: Documentação de API
+  localizacao: 01_Formulario!B82:F82
+  dominio_original: 7
+  macroarea_principal_proposta: A10
+  macroareas_secundarias_propostas: []
+  secoes_operacionais_candidatas: *id007
+  aba_derivada_original: 04_Operacao_Seguranca
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '7.4'
+  nome: Guia de onboarding
+  localizacao: 01_Formulario!B83:F83
+  dominio_original: 7
+  macroarea_principal_proposta: A10
+  macroareas_secundarias_propostas: []
+  secoes_operacionais_candidatas: *id007
+  aba_derivada_original: 04_Operacao_Seguranca
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '7.5'
+  nome: Catálogo de skills/ferramentas
+  localizacao: 01_Formulario!B84:F84
+  dominio_original: 7
+  macroarea_principal_proposta: A10
+  macroareas_secundarias_propostas:
+  - A11
+  secoes_operacionais_candidatas: *id007
+  aba_derivada_original: 04_Operacao_Seguranca
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '8.1'
+  nome: Problema/oportunidade que justifica o projeto
+  localizacao: 01_Formulario!B88:F88
+  dominio_original: 8
+  macroarea_principal_proposta: A00
+  macroareas_secundarias_propostas: []
+  secoes_operacionais_candidatas: &id008
+  - COP-S01
+  aba_derivada_original: 05_Gestao_Projetos
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '8.2'
+  nome: Sponsor / Patrocinador
+  localizacao: 01_Formulario!B89:F89
+  dominio_original: 8
+  macroarea_principal_proposta: A00
+  macroareas_secundarias_propostas:
+  - A12
+  secoes_operacionais_candidatas: *id008
+  aba_derivada_original: 05_Gestao_Projetos
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '8.3'
+  nome: Critério de sucesso principal
+  localizacao: 01_Formulario!B90:F90
+  dominio_original: 8
+  macroarea_principal_proposta: A00
+  macroareas_secundarias_propostas: []
+  secoes_operacionais_candidatas: *id008
+  aba_derivada_original: 05_Gestao_Projetos
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '8.4'
+  nome: Decisão Go/No-Go
+  localizacao: 01_Formulario!B91:F91
+  dominio_original: 8
+  macroarea_principal_proposta: A00
+  macroareas_secundarias_propostas: []
+  secoes_operacionais_candidatas: *id008
+  aba_derivada_original: 05_Gestao_Projetos
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '8.5'
+  nome: Abordagem do projeto
+  localizacao: 01_Formulario!B92:F92
+  dominio_original: 8
+  macroarea_principal_proposta: A00
+  macroareas_secundarias_propostas: []
+  secoes_operacionais_candidatas: *id008
+  aba_derivada_original: 05_Gestao_Projetos
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '9.1'
+  nome: Objetivo estratégico (12+ meses)
+  localizacao: 01_Formulario!B96:F96
+  dominio_original: 9
+  macroarea_principal_proposta: A00
+  macroareas_secundarias_propostas:
+  - A09
+  secoes_operacionais_candidatas: &id009
+  - COP-S01
+  - COP-S03
+  aba_derivada_original: 05_Gestao_Projetos
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '9.2'
+  nome: Objetivo tático (trimestre/ciclo)
+  localizacao: 01_Formulario!B97:F97
+  dominio_original: 9
+  macroarea_principal_proposta: A00
+  macroareas_secundarias_propostas:
+  - A09
+  secoes_operacionais_candidatas: *id009
+  aba_derivada_original: 05_Gestao_Projetos
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '9.3'
+  nome: Prioridade operacional da semana
+  localizacao: 01_Formulario!B98:F98
+  dominio_original: 9
+  macroarea_principal_proposta: A00
+  macroareas_secundarias_propostas:
+  - A09
+  secoes_operacionais_candidatas: *id009
+  aba_derivada_original: 05_Gestao_Projetos
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '9.4'
+  nome: Dependência entre horizontes
+  localizacao: 01_Formulario!B99:F99
+  dominio_original: 9
+  macroarea_principal_proposta: A00
+  macroareas_secundarias_propostas:
+  - A09
+  secoes_operacionais_candidatas: *id009
+  aba_derivada_original: 05_Gestao_Projetos
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '10.1'
+  nome: 'Marco de médio prazo #1'
+  localizacao: 01_Formulario!B103:F103
+  dominio_original: 10
+  macroarea_principal_proposta: A09
+  macroareas_secundarias_propostas: []
+  secoes_operacionais_candidatas: &id010
+  - COP-S03
+  aba_derivada_original: 06_Roadmap_Editorial
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '10.2'
+  nome: Ciclo semanal atual
+  localizacao: 01_Formulario!B104:F104
+  dominio_original: 10
+  macroarea_principal_proposta: A09
+  macroareas_secundarias_propostas: []
+  secoes_operacionais_candidatas: *id010
+  aba_derivada_original: 06_Roadmap_Editorial
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '10.3'
+  nome: Item de backlog crítico
+  localizacao: 01_Formulario!B105:F105
+  dominio_original: 10
+  macroarea_principal_proposta: A09
+  macroareas_secundarias_propostas: []
+  secoes_operacionais_candidatas: *id010
+  aba_derivada_original: 06_Roadmap_Editorial
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '10.4'
+  nome: Cadência de revisão
+  localizacao: 01_Formulario!B106:F106
+  dominio_original: 10
+  macroarea_principal_proposta: A09
+  macroareas_secundarias_propostas: []
+  secoes_operacionais_candidatas: *id010
+  aba_derivada_original: 06_Roadmap_Editorial
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '11.1'
+  nome: Linha editorial
+  localizacao: 01_Formulario!B110:F110
+  dominio_original: 11
+  macroarea_principal_proposta: A08
+  macroareas_secundarias_propostas: []
+  secoes_operacionais_candidatas: &id011
+  - COP-S05
+  aba_derivada_original: 06_Roadmap_Editorial
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '11.2'
+  nome: Calendário de publicação
+  localizacao: 01_Formulario!B111:F111
+  dominio_original: 11
+  macroarea_principal_proposta: A08
+  macroareas_secundarias_propostas: []
+  secoes_operacionais_candidatas: *id011
+  aba_derivada_original: 06_Roadmap_Editorial
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '11.3'
+  nome: Campanha ativa
+  localizacao: 01_Formulario!B112:F112
+  dominio_original: 11
+  macroarea_principal_proposta: A08
+  macroareas_secundarias_propostas: []
+  secoes_operacionais_candidatas: *id011
+  aba_derivada_original: 06_Roadmap_Editorial
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '11.4'
+  nome: Trilha de conteúdo
+  localizacao: 01_Formulario!B113:F113
+  dominio_original: 11
+  macroarea_principal_proposta: A08
+  macroareas_secundarias_propostas: []
+  secoes_operacionais_candidatas: *id011
+  aba_derivada_original: 06_Roadmap_Editorial
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '12.1'
+  nome: Stakeholder principal
+  localizacao: 01_Formulario!B117:F117
+  dominio_original: 12
+  macroarea_principal_proposta: A12
+  macroareas_secundarias_propostas: []
+  secoes_operacionais_candidatas: &id012
+  - COP-S07
+  aba_derivada_original: 07_Conhecimento_Stakeholders
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '12.2'
+  nome: Forma de comunicação
+  localizacao: 01_Formulario!B118:F118
+  dominio_original: 12
+  macroarea_principal_proposta: A12
+  macroareas_secundarias_propostas: []
+  secoes_operacionais_candidatas: *id012
+  aba_derivada_original: 07_Conhecimento_Stakeholders
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '12.3'
+  nome: Expectativa não alinhada
+  localizacao: 01_Formulario!B119:F119
+  dominio_original: 12
+  macroarea_principal_proposta: A12
+  macroareas_secundarias_propostas: []
+  secoes_operacionais_candidatas: *id012
+  aba_derivada_original: 07_Conhecimento_Stakeholders
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '13.1'
+  nome: 'Runbook crítico #1'
+  localizacao: 01_Formulario!B123:F123
+  dominio_original: 13
+  macroarea_principal_proposta: A05
+  macroareas_secundarias_propostas:
+  - A09
+  secoes_operacionais_candidatas: &id013
+  - COP-S04
+  aba_derivada_original: 07_Conhecimento_Stakeholders
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '13.2'
+  nome: Responsável pela rotina
+  localizacao: 01_Formulario!B124:F124
+  dominio_original: 13
+  macroarea_principal_proposta: A09
+  macroareas_secundarias_propostas:
+  - A12
+  secoes_operacionais_candidatas: *id013
+  aba_derivada_original: 07_Conhecimento_Stakeholders
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '13.3'
+  nome: SOP documentado?
+  localizacao: 01_Formulario!B125:F125
+  dominio_original: 13
+  macroarea_principal_proposta: A05
+  macroareas_secundarias_propostas:
+  - A09
+  secoes_operacionais_candidatas: *id013
+  aba_derivada_original: 07_Conhecimento_Stakeholders
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '14.1'
+  nome: Fonte de evidência principal
+  localizacao: 01_Formulario!B129:F129
+  dominio_original: 14
+  macroarea_principal_proposta: A06
+  macroareas_secundarias_propostas: []
+  secoes_operacionais_candidatas: &id014
+  - COP-S07
+  aba_derivada_original: 07_Conhecimento_Stakeholders
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '14.2'
+  nome: Pesquisa/dado pendente
+  localizacao: 01_Formulario!B130:F130
+  dominio_original: 14
+  macroarea_principal_proposta: A06
+  macroareas_secundarias_propostas: []
+  secoes_operacionais_candidatas: *id014
+  aba_derivada_original: 07_Conhecimento_Stakeholders
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '14.3'
+  nome: Papel de agentes de IA no projeto
+  localizacao: 01_Formulario!B131:F131
+  dominio_original: 14
+  macroarea_principal_proposta: A06
+  macroareas_secundarias_propostas:
+  - A11
+  secoes_operacionais_candidatas: *id014
+  aba_derivada_original: 07_Conhecimento_Stakeholders
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '15.1'
+  nome: Skill/plugin principal em uso
+  localizacao: 01_Formulario!B135:F135
+  dominio_original: 15
+  macroarea_principal_proposta: A11
+  macroareas_secundarias_propostas: []
+  secoes_operacionais_candidatas: &id015
+  - COP-S07
+  aba_derivada_original: 08_Skills_Plataformas
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '15.2'
+  nome: Ferramenta de automação conectada
+  localizacao: 01_Formulario!B136:F136
+  dominio_original: 15
+  macroarea_principal_proposta: A11
+  macroareas_secundarias_propostas: []
+  secoes_operacionais_candidatas: *id015
+  aba_derivada_original: 08_Skills_Plataformas
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '15.3'
+  nome: Lacuna de ferramenta
+  localizacao: 01_Formulario!B137:F137
+  dominio_original: 15
+  macroarea_principal_proposta: A11
+  macroareas_secundarias_propostas: []
+  secoes_operacionais_candidatas: *id015
+  aba_derivada_original: 08_Skills_Plataformas
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '16.1'
+  nome: Plataforma principal
+  localizacao: 01_Formulario!B141:F141
+  dominio_original: 16
+  macroarea_principal_proposta: A11
+  macroareas_secundarias_propostas: []
+  secoes_operacionais_candidatas: &id016
+  - COP-S07
+  aba_derivada_original: 08_Skills_Plataformas
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '16.2'
+  nome: Link/atalho crítico
+  localizacao: 01_Formulario!B142:F142
+  dominio_original: 16
+  macroarea_principal_proposta: A11
+  macroareas_secundarias_propostas: []
+  secoes_operacionais_candidatas: *id016
+  aba_derivada_original: 08_Skills_Plataformas
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '16.3'
+  nome: Responsável pela conta
+  localizacao: 01_Formulario!B143:F143
+  dominio_original: 16
+  macroarea_principal_proposta: A11
+  macroareas_secundarias_propostas:
+  - A12
+  secoes_operacionais_candidatas: *id016
+  aba_derivada_original: 08_Skills_Plataformas
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '17.1'
+  nome: Prompt canônico principal
+  localizacao: 01_Formulario!B147:F147
+  dominio_original: 17
+  macroarea_principal_proposta: A11
+  macroareas_secundarias_propostas: []
+  secoes_operacionais_candidatas: &id017
+  - COP-S07
+  aba_derivada_original: 08_Skills_Plataformas
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '17.2'
+  nome: Comando/gatilho operacional
+  localizacao: 01_Formulario!B148:F148
+  dominio_original: 17
+  macroarea_principal_proposta: A11
+  macroareas_secundarias_propostas: []
+  secoes_operacionais_candidatas: *id017
+  aba_derivada_original: 08_Skills_Plataformas
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.
+- id: '17.3'
+  nome: Regra anti-alucinação específica
+  localizacao: 01_Formulario!B149:F149
+  dominio_original: 17
+  macroarea_principal_proposta: A11
+  macroareas_secundarias_propostas: []
+  secoes_operacionais_candidatas: *id017
+  aba_derivada_original: 08_Skills_Plataformas
+  destino_canonico: 01_Formulario
+  regra: Preservar ID, campo, orientação e exemplo. Enriquecer classificação em tabela separada.
+  status_mapeamento: PROPOSTO
+  origem_classificacao: Análise do rótulo do campo; não classifica respostas ausentes.

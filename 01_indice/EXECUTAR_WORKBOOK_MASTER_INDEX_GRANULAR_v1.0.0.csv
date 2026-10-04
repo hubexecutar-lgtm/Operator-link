@@ -1,0 +1,169 @@
+﻿ID,ID_PAI,TIPO,TITULO,MACROAREAS,LOCALIZACAO,ORIGEM_ID,STATUS
+IDX-MACRO,,AGRUPADOR,Macroáreas de classificação,,,PROPOSTO,PROPOSTO
+A00,IDX-MACRO,MACROAREA,Governança Estratégia e Gestão,A00,WORKBOOK INDEX.txt — tabela de macroáreas,LEGADO,CATALOGADO
+A01,IDX-MACRO,MACROAREA,Negócio e Go to Market,A01,WORKBOOK INDEX.txt — tabela de macroáreas,LEGADO,CATALOGADO
+A02,IDX-MACRO,MACROAREA,Produto e Experiência,A02,WORKBOOK INDEX.txt — tabela de macroáreas,LEGADO,CATALOGADO
+A03,IDX-MACRO,MACROAREA,Handoff Produto para Engenharia,A03,WORKBOOK INDEX.txt — tabela de macroáreas,LEGADO,CATALOGADO
+A04,IDX-MACRO,MACROAREA,Arquitetura Engenharia e Implementação,A04,WORKBOOK INDEX.txt — tabela de macroáreas,LEGADO,CATALOGADO
+A05,IDX-MACRO,MACROAREA,Operações Plataforma e Segurança,A05,WORKBOOK INDEX.txt — tabela de macroáreas,LEGADO,CATALOGADO
+A06,IDX-MACRO,MACROAREA,Dados Pesquisa e Conhecimento,A06,WORKBOOK INDEX.txt — tabela de macroáreas,LEGADO,CATALOGADO
+A07,IDX-MACRO,MACROAREA,Corporativo e Suporte,A07,WORKBOOK INDEX.txt — tabela de macroáreas,LEGADO,CATALOGADO
+A08,IDX-MACRO,MACROAREA,Conteúdo Comunicação e Growth,A08,WORKBOOK INDEX.txt — tabela de macroáreas,LEGADO,CATALOGADO
+A09,IDX-MACRO,MACROAREA,Execução e Planejamento do Trabalho,A09,WORKBOOK INDEX.txt — tabela de macroáreas,LEGADO,CATALOGADO
+A10,IDX-MACRO,MACROAREA,Documentação e Governança do Conhecimento,A10,WORKBOOK INDEX.txt — tabela de macroáreas,LEGADO,CATALOGADO
+A11,IDX-MACRO,MACROAREA,Ferramentas IA e Ativos Reutilizáveis,A11,WORKBOOK INDEX.txt — tabela de macroáreas,LEGADO,CATALOGADO
+A12,IDX-MACRO,MACROAREA,Stakeholders e Ecossistema,A12,WORKBOOK INDEX.txt — tabela de macroáreas,LEGADO,CATALOGADO
+IDX-DOM,,AGRUPADOR,Domínios e campos originais,,,PROPOSTO,PROPOSTO
+1,IDX-DOM,DOMINIO,NEGÓCIO & GTM,A01; A05; A06; A07,01_Formulario!B6,LEGADO,EXISTENTE
+1.1,1,CAMPO,Problema central,A01,01_Formulario!B8:F8 → 02_Visao_Geral,LEGADO,EXISTENTE; classificação proposta
+1.2,1,CAMPO,Público-alvo / ICP,A01,01_Formulario!B9:F9 → 02_Visao_Geral,LEGADO,EXISTENTE; classificação proposta
+1.3,1,CAMPO,Proposta de valor,A01,01_Formulario!B10:F10 → 02_Visao_Geral,LEGADO,EXISTENTE; classificação proposta
+1.4,1,CAMPO,Canais de aquisição,A01,01_Formulario!B11:F11 → 02_Visao_Geral,LEGADO,EXISTENTE; classificação proposta
+1.5,1,CAMPO,Métrica North Star,A01; A06,01_Formulario!B12:F12 → 02_Visao_Geral,LEGADO,EXISTENTE; classificação proposta
+1.6,1,CAMPO,Métricas guardrail,A01; A06,01_Formulario!B13:F13 → 02_Visao_Geral,LEGADO,EXISTENTE; classificação proposta
+1.7,1,CAMPO,CAC (custo de aquisição),A01; A07,01_Formulario!B14:F14 → 02_Visao_Geral,LEGADO,EXISTENTE; classificação proposta
+1.8,1,CAMPO,LTV (valor do tempo de vida),A01; A07,01_Formulario!B15:F15 → 02_Visao_Geral,LEGADO,EXISTENTE; classificação proposta
+1.9,1,CAMPO,Margem por unidade/usuário,A01; A07,01_Formulario!B16:F16 → 02_Visao_Geral,LEGADO,EXISTENTE; classificação proposta
+1.10,1,CAMPO,Ponto de equilíbrio (breakeven),A01; A07,01_Formulario!B17:F17 → 02_Visao_Geral,LEGADO,EXISTENTE; classificação proposta
+1.11,1,CAMPO,Teto de gasto de infraestrutura,A01; A05; A07,01_Formulario!B18:F18 → 02_Visao_Geral,LEGADO,EXISTENTE; classificação proposta
+1.12,1,CAMPO,Gatilhos de upgrade de infra,A01; A05,01_Formulario!B19:F19 → 02_Visao_Geral,LEGADO,EXISTENTE; classificação proposta
+2,IDX-DOM,DOMINIO,PRODUTO,A02; A03,01_Formulario!B21,LEGADO,EXISTENTE
+2.1,2,CAMPO,Nome do produto/feature,A02,01_Formulario!B23:F23 → 02_Visao_Geral,LEGADO,EXISTENTE; classificação proposta
+2.2,2,CAMPO,Contexto do PRD,A02,01_Formulario!B24:F24 → 02_Visao_Geral,LEGADO,EXISTENTE; classificação proposta
+2.3,2,CAMPO,Objetivos (goals),A02,01_Formulario!B25:F25 → 02_Visao_Geral,LEGADO,EXISTENTE; classificação proposta
+2.4,2,CAMPO,Não-objetivos (non-goals),A02,01_Formulario!B26:F26 → 02_Visao_Geral,LEGADO,EXISTENTE; classificação proposta
+2.5,2,CAMPO,Requisitos funcionais (FRD),A02; A03,01_Formulario!B27:F27 → 02_Visao_Geral,LEGADO,EXISTENTE; classificação proposta
+2.6,2,CAMPO,Critérios de aceite,A02; A03,01_Formulario!B28:F28 → 02_Visao_Geral,LEGADO,EXISTENTE; classificação proposta
+2.7,2,CAMPO,Persona principal,A02,01_Formulario!B29:F29 → 02_Visao_Geral,LEGADO,EXISTENTE; classificação proposta
+2.8,2,CAMPO,Jornada — Descoberta,A02,01_Formulario!B30:F30 → 02_Visao_Geral,LEGADO,EXISTENTE; classificação proposta
+2.9,2,CAMPO,Jornada — Ativação,A02,01_Formulario!B31:F31 → 02_Visao_Geral,LEGADO,EXISTENTE; classificação proposta
+2.10,2,CAMPO,Jornada — Uso recorrente,A02,01_Formulario!B32:F32 → 02_Visao_Geral,LEGADO,EXISTENTE; classificação proposta
+2.11,2,CAMPO,Momento 'aha',A02,01_Formulario!B33:F33 → 02_Visao_Geral,LEGADO,EXISTENTE; classificação proposta
+2.12,2,CAMPO,User story de referência,A02,01_Formulario!B34:F34 → 02_Visao_Geral,LEGADO,EXISTENTE; classificação proposta
+3,IDX-DOM,DOMINIO,ARQUITETURA & FULL STACK,A04; A05; A10,01_Formulario!B36,LEGADO,EXISTENTE
+3.1,3,CAMPO,Stack — Frontend,A04,01_Formulario!B38:F38 → 03_Arquitetura_Tecnica,LEGADO,EXISTENTE; classificação proposta
+3.2,3,CAMPO,Stack — Backend,A04,01_Formulario!B39:F39 → 03_Arquitetura_Tecnica,LEGADO,EXISTENTE; classificação proposta
+3.3,3,CAMPO,Banco de dados,A04,01_Formulario!B40:F40 → 03_Arquitetura_Tecnica,LEGADO,EXISTENTE; classificação proposta
+3.4,3,CAMPO,Infraestrutura / hosting,A04; A05,01_Formulario!B41:F41 → 03_Arquitetura_Tecnica,LEGADO,EXISTENTE; classificação proposta
+3.5,3,CAMPO,Autenticação,A04; A05,01_Formulario!B42:F42 → 03_Arquitetura_Tecnica,LEGADO,EXISTENTE; classificação proposta
+3.6,3,CAMPO,Estrutura de repositório,A04,01_Formulario!B43:F43 → 03_Arquitetura_Tecnica,LEGADO,EXISTENTE; classificação proposta
+3.7,3,CAMPO,Mapa de rotas principais,A04,01_Formulario!B44:F44 → 03_Arquitetura_Tecnica,LEGADO,EXISTENTE; classificação proposta
+3.8,3,CAMPO,Decisão de arquitetura #1 (ADR),A04; A10,01_Formulario!B45:F45 → 03_Arquitetura_Tecnica,LEGADO,EXISTENTE; classificação proposta
+3.9,3,CAMPO,Decisão de arquitetura #2 (ADR),A04; A10,01_Formulario!B46:F46 → 03_Arquitetura_Tecnica,LEGADO,EXISTENTE; classificação proposta
+3.10,3,CAMPO,Trade-offs aceitos,A04,01_Formulario!B47:F47 → 03_Arquitetura_Tecnica,LEGADO,EXISTENTE; classificação proposta
+4,IDX-DOM,DOMINIO,IMPLEMENTAÇÃO,A03; A04; A11,01_Formulario!B49,LEGADO,EXISTENTE
+4.1,4,CAMPO,Modelo de dados / schema,A04; A03,01_Formulario!B51:F51 → 03_Arquitetura_Tecnica,LEGADO,EXISTENTE; classificação proposta
+4.2,4,CAMPO,Endpoints de API principais,A04; A03,01_Formulario!B52:F52 → 03_Arquitetura_Tecnica,LEGADO,EXISTENTE; classificação proposta
+4.3,4,CAMPO,Agentes/Tools MCP integrados,A04; A11,01_Formulario!B53:F53 → 03_Arquitetura_Tecnica,LEGADO,EXISTENTE; classificação proposta
+4.4,4,CAMPO,Dependências núcleo (obrigatórias),A04,01_Formulario!B54:F54 → 03_Arquitetura_Tecnica,LEGADO,EXISTENTE; classificação proposta
+4.5,4,CAMPO,Dependências condicionais,A04,01_Formulario!B55:F55 → 03_Arquitetura_Tecnica,LEGADO,EXISTENTE; classificação proposta
+4.6,4,CAMPO,Política de atualização de dependências,A04,01_Formulario!B56:F56 → 03_Arquitetura_Tecnica,LEGADO,EXISTENTE; classificação proposta
+4.7,4,CAMPO,Componente frontend principal,A04,01_Formulario!B57:F57 → 03_Arquitetura_Tecnica,LEGADO,EXISTENTE; classificação proposta
+4.8,4,CAMPO,Testes automatizados,A04; A03,01_Formulario!B58:F58 → 03_Arquitetura_Tecnica,LEGADO,EXISTENTE; classificação proposta
+5,IDX-DOM,DOMINIO,OPERAÇÃO (DEPLOY & ROLLBACK),A05,01_Formulario!B60,LEGADO,EXISTENTE
+5.1,5,CAMPO,Checklist pré-deploy,A05,01_Formulario!B62:F62 → 04_Operacao_Seguranca,LEGADO,EXISTENTE; classificação proposta
+5.2,5,CAMPO,Checks de saúde pós-deploy,A05,01_Formulario!B63:F63 → 04_Operacao_Seguranca,LEGADO,EXISTENTE; classificação proposta
+5.3,5,CAMPO,Gatilho de rollback — taxa de erro,A05,01_Formulario!B64:F64 → 04_Operacao_Seguranca,LEGADO,EXISTENTE; classificação proposta
+5.4,5,CAMPO,Gatilho de rollback — latência,A05,01_Formulario!B65:F65 → 04_Operacao_Seguranca,LEGADO,EXISTENTE; classificação proposta
+5.5,5,CAMPO,Gatilho de rollback — fluxo crítico,A05,01_Formulario!B66:F66 → 04_Operacao_Seguranca,LEGADO,EXISTENTE; classificação proposta
+5.6,5,CAMPO,Procedimento de rollback,A05,01_Formulario!B67:F67 → 04_Operacao_Seguranca,LEGADO,EXISTENTE; classificação proposta
+6,IDX-DOM,DOMINIO,GOVERNANÇA & SEGURANÇA,A00; A04; A05; A11,01_Formulario!B69,LEGADO,EXISTENTE
+6.1,6,CAMPO,Estratégia de branch,A00; A04,01_Formulario!B71:F71 → 04_Operacao_Seguranca,LEGADO,EXISTENTE; classificação proposta
+6.2,6,CAMPO,Gate humano obrigatório,A00,01_Formulario!B72:F72 → 04_Operacao_Seguranca,LEGADO,EXISTENTE; classificação proposta
+6.3,6,CAMPO,Armazenamento de segredos,A05; A00,01_Formulario!B73:F73 → 04_Operacao_Seguranca,LEGADO,EXISTENTE; classificação proposta
+6.4,6,CAMPO,Rotação de credenciais,A05; A00,01_Formulario!B74:F74 → 04_Operacao_Seguranca,LEGADO,EXISTENTE; classificação proposta
+6.5,6,CAMPO,Riscos de segurança conhecidos,A05; A00,01_Formulario!B75:F75 → 04_Operacao_Seguranca,LEGADO,EXISTENTE; classificação proposta
+6.6,6,CAMPO,Escopo de autonomia do agente de AI,A00; A11,01_Formulario!B76:F76 → 04_Operacao_Seguranca,LEGADO,EXISTENTE; classificação proposta
+7,IDX-DOM,DOMINIO,DOCUMENTAÇÃO FUNDACIONAL,A10; A11,01_Formulario!B78,LEGADO,EXISTENTE
+7.1,7,CAMPO,README existe?,A10,01_Formulario!B80:F80 → 04_Operacao_Seguranca,LEGADO,EXISTENTE; classificação proposta
+7.2,7,CAMPO,ADRs documentados,A10,01_Formulario!B81:F81 → 04_Operacao_Seguranca,LEGADO,EXISTENTE; classificação proposta
+7.3,7,CAMPO,Documentação de API,A10,01_Formulario!B82:F82 → 04_Operacao_Seguranca,LEGADO,EXISTENTE; classificação proposta
+7.4,7,CAMPO,Guia de onboarding,A10,01_Formulario!B83:F83 → 04_Operacao_Seguranca,LEGADO,EXISTENTE; classificação proposta
+7.5,7,CAMPO,Catálogo de skills/ferramentas,A10; A11,01_Formulario!B84:F84 → 04_Operacao_Seguranca,LEGADO,EXISTENTE; classificação proposta
+8,IDX-DOM,DOMINIO,GESTÃO DE PROJETOS & PMBOK,A00; A12,01_Formulario!B86,LEGADO,EXISTENTE
+8.1,8,CAMPO,Problema/oportunidade que justifica o projeto,A00,01_Formulario!B88:F88 → 05_Gestao_Projetos,LEGADO,EXISTENTE; classificação proposta
+8.2,8,CAMPO,Sponsor / Patrocinador,A00; A12,01_Formulario!B89:F89 → 05_Gestao_Projetos,LEGADO,EXISTENTE; classificação proposta
+8.3,8,CAMPO,Critério de sucesso principal,A00,01_Formulario!B90:F90 → 05_Gestao_Projetos,LEGADO,EXISTENTE; classificação proposta
+8.4,8,CAMPO,Decisão Go/No-Go,A00,01_Formulario!B91:F91 → 05_Gestao_Projetos,LEGADO,EXISTENTE; classificação proposta
+8.5,8,CAMPO,Abordagem do projeto,A00,01_Formulario!B92:F92 → 05_Gestao_Projetos,LEGADO,EXISTENTE; classificação proposta
+9,IDX-DOM,DOMINIO,"PLANEJAMENTO ESTRATÉGICO, TÁTICO E OPERACIONAL",A00; A09,01_Formulario!B94,LEGADO,EXISTENTE
+9.1,9,CAMPO,Objetivo estratégico (12+ meses),A00; A09,01_Formulario!B96:F96 → 05_Gestao_Projetos,LEGADO,EXISTENTE; classificação proposta
+9.2,9,CAMPO,Objetivo tático (trimestre/ciclo),A00; A09,01_Formulario!B97:F97 → 05_Gestao_Projetos,LEGADO,EXISTENTE; classificação proposta
+9.3,9,CAMPO,Prioridade operacional da semana,A00; A09,01_Formulario!B98:F98 → 05_Gestao_Projetos,LEGADO,EXISTENTE; classificação proposta
+9.4,9,CAMPO,Dependência entre horizontes,A00; A09,01_Formulario!B99:F99 → 05_Gestao_Projetos,LEGADO,EXISTENTE; classificação proposta
+10,IDX-DOM,DOMINIO,"ROADMAP, CRONOGRAMA, CICLOS E BACKLOG",A09,01_Formulario!B101,LEGADO,EXISTENTE
+10.1,10,CAMPO,Marco de médio prazo #1,A09,01_Formulario!B103:F103 → 06_Roadmap_Editorial,LEGADO,EXISTENTE; classificação proposta
+10.2,10,CAMPO,Ciclo semanal atual,A09,01_Formulario!B104:F104 → 06_Roadmap_Editorial,LEGADO,EXISTENTE; classificação proposta
+10.3,10,CAMPO,Item de backlog crítico,A09,01_Formulario!B105:F105 → 06_Roadmap_Editorial,LEGADO,EXISTENTE; classificação proposta
+10.4,10,CAMPO,Cadência de revisão,A09,01_Formulario!B106:F106 → 06_Roadmap_Editorial,LEGADO,EXISTENTE; classificação proposta
+11,IDX-DOM,DOMINIO,"EDITORIAL, CAMPANHAS E CONTEÚDO",A08,01_Formulario!B108,LEGADO,EXISTENTE
+11.1,11,CAMPO,Linha editorial,A08,01_Formulario!B110:F110 → 06_Roadmap_Editorial,LEGADO,EXISTENTE; classificação proposta
+11.2,11,CAMPO,Calendário de publicação,A08,01_Formulario!B111:F111 → 06_Roadmap_Editorial,LEGADO,EXISTENTE; classificação proposta
+11.3,11,CAMPO,Campanha ativa,A08,01_Formulario!B112:F112 → 06_Roadmap_Editorial,LEGADO,EXISTENTE; classificação proposta
+11.4,11,CAMPO,Trilha de conteúdo,A08,01_Formulario!B113:F113 → 06_Roadmap_Editorial,LEGADO,EXISTENTE; classificação proposta
+12,IDX-DOM,DOMINIO,STAKEHOLDERS,A12,01_Formulario!B115,LEGADO,EXISTENTE
+12.1,12,CAMPO,Stakeholder principal,A12,01_Formulario!B117:F117 → 07_Conhecimento_Stakeholders,LEGADO,EXISTENTE; classificação proposta
+12.2,12,CAMPO,Forma de comunicação,A12,01_Formulario!B118:F118 → 07_Conhecimento_Stakeholders,LEGADO,EXISTENTE; classificação proposta
+12.3,12,CAMPO,Expectativa não alinhada,A12,01_Formulario!B119:F119 → 07_Conhecimento_Stakeholders,LEGADO,EXISTENTE; classificação proposta
+13,IDX-DOM,DOMINIO,"RUNBOOKS, SOPS E ROTINAS",A05; A09; A12,01_Formulario!B121,LEGADO,EXISTENTE
+13.1,13,CAMPO,Runbook crítico #1,A05; A09,01_Formulario!B123:F123 → 07_Conhecimento_Stakeholders,LEGADO,EXISTENTE; classificação proposta
+13.2,13,CAMPO,Responsável pela rotina,A09; A12,01_Formulario!B124:F124 → 07_Conhecimento_Stakeholders,LEGADO,EXISTENTE; classificação proposta
+13.3,13,CAMPO,SOP documentado?,A05; A09,01_Formulario!B125:F125 → 07_Conhecimento_Stakeholders,LEGADO,EXISTENTE; classificação proposta
+14,IDX-DOM,DOMINIO,"PESQUISA, DADOS E CONHECIMENTO",A06; A11,01_Formulario!B127,LEGADO,EXISTENTE
+14.1,14,CAMPO,Fonte de evidência principal,A06,01_Formulario!B129:F129 → 07_Conhecimento_Stakeholders,LEGADO,EXISTENTE; classificação proposta
+14.2,14,CAMPO,Pesquisa/dado pendente,A06,01_Formulario!B130:F130 → 07_Conhecimento_Stakeholders,LEGADO,EXISTENTE; classificação proposta
+14.3,14,CAMPO,Papel de agentes de IA no projeto,A06; A11,01_Formulario!B131:F131 → 07_Conhecimento_Stakeholders,LEGADO,EXISTENTE; classificação proposta
+15,IDX-DOM,DOMINIO,"SKILLS, PLUGINS E FERRAMENTAS",A11,01_Formulario!B133,LEGADO,EXISTENTE
+15.1,15,CAMPO,Skill/plugin principal em uso,A11,01_Formulario!B135:F135 → 08_Skills_Plataformas,LEGADO,EXISTENTE; classificação proposta
+15.2,15,CAMPO,Ferramenta de automação conectada,A11,01_Formulario!B136:F136 → 08_Skills_Plataformas,LEGADO,EXISTENTE; classificação proposta
+15.3,15,CAMPO,Lacuna de ferramenta,A11,01_Formulario!B137:F137 → 08_Skills_Plataformas,LEGADO,EXISTENTE; classificação proposta
+16,IDX-DOM,DOMINIO,"PLATAFORMAS, CONTAS E IDENTIFICADORES",A11; A12,01_Formulario!B139,LEGADO,EXISTENTE
+16.1,16,CAMPO,Plataforma principal,A11,01_Formulario!B141:F141 → 08_Skills_Plataformas,LEGADO,EXISTENTE; classificação proposta
+16.2,16,CAMPO,Link/atalho crítico,A11,01_Formulario!B142:F142 → 08_Skills_Plataformas,LEGADO,EXISTENTE; classificação proposta
+16.3,16,CAMPO,Responsável pela conta,A11; A12,01_Formulario!B143:F143 → 08_Skills_Plataformas,LEGADO,EXISTENTE; classificação proposta
+17,IDX-DOM,DOMINIO,PROMPT ENGINEERING & COMANDOS,A11,01_Formulario!B145,LEGADO,EXISTENTE
+17.1,17,CAMPO,Prompt canônico principal,A11,01_Formulario!B147:F147 → 08_Skills_Plataformas,LEGADO,EXISTENTE; classificação proposta
+17.2,17,CAMPO,Comando/gatilho operacional,A11,01_Formulario!B148:F148 → 08_Skills_Plataformas,LEGADO,EXISTENTE; classificação proposta
+17.3,17,CAMPO,Regra anti-alucinação específica,A11,01_Formulario!B149:F149 → 08_Skills_Plataformas,LEGADO,EXISTENTE; classificação proposta
+IDX-CADERNO,,AGRUPADOR,Seções do caderno operacional,,,PROPOSTO,PROPOSTO
+COP-S01,IDX-CADERNO,SECAO,Comece aqui,,WORKBOOK INDEX.txt — seção 01,PROPOSTO,ID proposto; título original
+COP-S02,IDX-CADERNO,SECAO,Direção estratégica,,WORKBOOK INDEX.txt — seção 02,PROPOSTO,ID proposto; título original
+COP-S03,IDX-CADERNO,SECAO,Entregas e dependências,,WORKBOOK INDEX.txt — seção 03,PROPOSTO,ID proposto; título original
+COP-S04,IDX-CADERNO,SECAO,Fichas de execução,,WORKBOOK INDEX.txt — seção 04,PROPOSTO,ID proposto; título original
+COP-S05,IDX-CADERNO,SECAO,Produção editorial,,WORKBOOK INDEX.txt — seção 05,PROPOSTO,ID proposto; título original
+COP-S06,IDX-CADERNO,SECAO,Verificação e retomada,,WORKBOOK INDEX.txt — seção 06,PROPOSTO,ID proposto; título original
+COP-S07,IDX-CADERNO,SECAO,Referências,,WORKBOOK INDEX.txt — seção 07,PROPOSTO,ID proposto; título original
+IDX-CAMADAS,,AGRUPADOR,Camadas documentais,,,PROPOSTO,PROPOSTO
+ACERVO_INTEGRAL,IDX-CAMADAS,CAMADA,Acervo integral,,WORKBOOK INDEX.txt — três camadas,PROPOSTO,ID proposto; camada original
+MANUAL_REFERENCIA,IDX-CAMADAS,CAMADA,Manual de referência,,WORKBOOK INDEX.txt — três camadas,PROPOSTO,ID proposto; camada original
+CADERNO_OPERACIONAL,IDX-CAMADAS,CAMADA,Caderno operacional,,WORKBOOK INDEX.txt — três camadas,PROPOSTO,ID proposto; camada original
+IDX-ABAS,,AGRUPADOR,Abas e controles da planilha,,,PROPOSTO,PROPOSTO
+ABA-00,IDX-ABAS,ABA,00_Leia-me,,00_Leia-me,PROPOSTO,ID proposto; aba existente
+ABA-01,IDX-ABAS,ABA,01_Formulario,,01_Formulario,PROPOSTO,ID proposto; aba existente
+ABA-02,IDX-ABAS,ABA,02_Visao_Geral,,02_Visao_Geral,PROPOSTO,ID proposto; aba existente
+ABA-03,IDX-ABAS,ABA,03_Arquitetura_Tecnica,,03_Arquitetura_Tecnica,PROPOSTO,ID proposto; aba existente
+ABA-04,IDX-ABAS,ABA,04_Operacao_Seguranca,,04_Operacao_Seguranca,PROPOSTO,ID proposto; aba existente
+ABA-05,IDX-ABAS,ABA,05_Gestao_Projetos,,05_Gestao_Projetos,PROPOSTO,ID proposto; aba existente
+ABA-06,IDX-ABAS,ABA,06_Roadmap_Editorial,,06_Roadmap_Editorial,PROPOSTO,ID proposto; aba existente
+ABA-07,IDX-ABAS,ABA,07_Conhecimento_Stakeholders,,07_Conhecimento_Stakeholders,PROPOSTO,ID proposto; aba existente
+ABA-08,IDX-ABAS,ABA,08_Skills_Plataformas,,08_Skills_Plataformas,PROPOSTO,ID proposto; aba existente
+ABA-09,IDX-ABAS,ABA,09_Indice_IDs,,09_Indice_IDs,PROPOSTO,ID proposto; aba existente
+ABA-10,IDX-ABAS,ABA,10_Mapeamento,,tblMapeamento,PROPOSTO,PROPOSTO
+ABA-11,IDX-ABAS,ABA,11_Registros,,tblRegistros,PROPOSTO,PROPOSTO
+ABA-12,IDX-ABAS,ABA,12_Cobertura,,tblCobertura,PROPOSTO,PROPOSTO
+ABA-13,IDX-ABAS,ABA,13_Relacoes,,tblRelacoes,PROPOSTO,PROPOSTO
+ABA-14,IDX-ABAS,ABA,14_Execucao,,tblExecucao,PROPOSTO,PROPOSTO
+ABA-15,IDX-ABAS,ABA,15_Evidencias,,tblEvidencias,PROPOSTO,PROPOSTO
+ABA-16,IDX-ABAS,ABA,16_Historico,,tblHistorico,PROPOSTO,PROPOSTO
+ABA-17,IDX-ABAS,ABA,17_Catalogos,,catalogos,PROPOSTO,PROPOSTO
+ABA-18,IDX-ABAS,ABA,18_Hub,,Visão derivada de navegação e próxima ação,PROPOSTO,PROPOSTO
+ABA-19,IDX-ABAS,ABA,19_Caderno,,Visão derivada imprimível; não é fonte de dados,PROPOSTO,PROPOSTO
+ABA-20,IDX-ABAS,ABA,20_Auditoria,,Diagnóstico terminal independente,PROPOSTO,PROPOSTO
+IDX-MIGRACAO,,AGRUPADOR,Plano de adaptação,,,PROPOSTO,PROPOSTO
+MIG-01,IDX-MIGRACAO,ETAPA_ADAPTACAO,Registrar baseline e catálogo literal de navegação,,00_PLANO_ADAPTACAO.yaml — plano,PROPOSTO,READY
+MIG-02,IDX-MIGRACAO,ETAPA_ADAPTACAO,Implementar tabelas e validações do contrato,,00_PLANO_ADAPTACAO.yaml — plano,PROPOSTO,NOT_READY
+MIG-03,IDX-MIGRACAO,ETAPA_ADAPTACAO,Aplicar classificação dos 94 campos,,00_PLANO_ADAPTACAO.yaml — plano,PROPOSTO,NOT_READY
+MIG-04,IDX-MIGRACAO,ETAPA_ADAPTACAO,Inventariar unidades documentais e cobertura,,00_PLANO_ADAPTACAO.yaml — plano,PROPOSTO,BLOCKED
+MIG-05,IDX-MIGRACAO,ETAPA_ADAPTACAO,Preparar fichas operacionais e grafo de dependências,,00_PLANO_ADAPTACAO.yaml — plano,PROPOSTO,NOT_READY
+MIG-06,IDX-MIGRACAO,ETAPA_ADAPTACAO,Construir Hub e visão de impressão,,00_PLANO_ADAPTACAO.yaml — plano,PROPOSTO,NOT_READY
+MIG-07,IDX-MIGRACAO,ETAPA_ADAPTACAO,Verificar migração e registrar handoff,,00_PLANO_ADAPTACAO.yaml — plano,PROPOSTO,NOT_READY

@@ -1,0 +1,505 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: urn:executar:workbook:controle:1.0.0
+title: EXECUTAR Workbook — contrato de dados proposto
+description: Chaves e estrutura de registros. Regras de integridade entre linhas exigem validador complementar.
+  IDs propostos não indicam registros já criados.
+type: object
+additionalProperties: false
+required:
+- metadata
+- fontes
+- navegacao
+- registros
+- cobertura
+- relacoes
+- execucao
+- evidencias
+- historico
+properties:
+  metadata:
+    type: object
+    additionalProperties: false
+    properties:
+      ID: &id001
+        type: string
+        minLength: 1
+      VERSION: *id001
+      AREA: *id001
+      WORKFLOW: *id001
+      OWNER: *id001
+      STATUS: *id001
+      AUTOMATION_LEVEL:
+        type: string
+        enum:
+        - A0
+        - A1
+        - A2
+        - A3
+        - A4
+      HANDOFF: *id001
+    required:
+    - ID
+    - VERSION
+    - AREA
+    - WORKFLOW
+    - OWNER
+    - STATUS
+    - AUTOMATION_LEVEL
+    - HANDOFF
+  fontes:
+    type: array
+    items:
+      $ref: '#/$defs/fonte'
+  navegacao:
+    type: array
+    items:
+      $ref: '#/$defs/navegacao'
+  registros:
+    type: array
+    items:
+      $ref: '#/$defs/registro'
+  cobertura:
+    type: array
+    items:
+      $ref: '#/$defs/cobertura'
+  relacoes:
+    type: array
+    items:
+      $ref: '#/$defs/relacao'
+  execucao:
+    type: array
+    items:
+      $ref: '#/$defs/execucao'
+  evidencias:
+    type: array
+    items:
+      $ref: '#/$defs/evidencia'
+  historico:
+    type: array
+    items:
+      $ref: '#/$defs/historico'
+$defs:
+  localizacao:
+    type: object
+    additionalProperties: false
+    properties:
+      fonte_id:
+        type: string
+        pattern: ^SRC-[0-9]{6}$
+      localizador: *id001
+    required:
+    - fonte_id
+    - localizador
+  fonte:
+    type: object
+    additionalProperties: false
+    properties:
+      fonte_id:
+        type: string
+        pattern: ^SRC-[0-9]{6}$
+      nome: *id001
+      uri_ou_caminho: *id001
+      sha256:
+        type: string
+        pattern: ^[a-f0-9]{64}$
+      disponibilidade:
+        type: string
+        enum:
+        - DISPONIVEL
+        - INDISPONIVEL
+        - A DEFINIR
+    required:
+    - fonte_id
+    - nome
+    - uri_ou_caminho
+    - disponibilidade
+  navegacao:
+    type: object
+    additionalProperties: false
+    properties:
+      nav_id:
+        type: string
+        pattern: ^NAV-[0-9]{6}$
+      rotulo_original: *id001
+      parent_nav_id:
+        anyOf:
+        - type: string
+          pattern: ^NAV-[0-9]{6}$
+        - type: 'null'
+      origem:
+        $ref: '#/$defs/localizacao'
+      status_mapeamento:
+        type: string
+        enum:
+        - PROPOSTO
+        - CONFIRMADO
+        - A DEFINIR
+    required:
+    - nav_id
+    - rotulo_original
+    - parent_nav_id
+    - origem
+    - status_mapeamento
+  registro:
+    type: object
+    additionalProperties: false
+    properties:
+      registro_id:
+        type: string
+        pattern: ^REG-[0-9]{6}$
+      parent_id:
+        anyOf:
+        - type: string
+          pattern: ^REG-[0-9]{6}$
+        - type: 'null'
+      titulo: *id001
+      tipo:
+        type: string
+        enum:
+        - CONCEITO
+        - EVIDENCIA
+        - HIPOTESE
+        - DECISAO
+        - TAREFA
+        - EXEMPLO
+        - REFERENCIA
+        - DOCUMENTO
+        - ENTREGAVEL
+        - PROJETO
+        - VALUE_STREAM
+        - ACAO
+      macroarea_principal:
+        type: string
+        enum:
+        - A00
+        - A01
+        - A02
+        - A03
+        - A04
+        - A05
+        - A06
+        - A07
+        - A08
+        - A09
+        - A10
+        - A11
+        - A12
+      macroareas_secundarias:
+        type: array
+        items:
+          type: string
+          enum:
+          - A00
+          - A01
+          - A02
+          - A03
+          - A04
+          - A05
+          - A06
+          - A07
+          - A08
+          - A09
+          - A10
+          - A11
+          - A12
+        uniqueItems: true
+      nav_ids:
+        type: array
+        items:
+          type: string
+          pattern: ^NAV-[0-9]{6}$
+      secoes_operacionais:
+        type: array
+        items:
+          type: string
+          enum:
+          - COP-S01
+          - COP-S02
+          - COP-S03
+          - COP-S04
+          - COP-S05
+          - COP-S06
+          - COP-S07
+        uniqueItems: true
+      origens:
+        type: array
+        items:
+          $ref: '#/$defs/localizacao'
+        minItems: 1
+      conteudo_ou_uri: *id001
+      owner: *id001
+      version: *id001
+      status_documental:
+        type: string
+        enum:
+        - ORIGINAL
+        - DRAFT
+        - PREPARED
+        - SUBMITTED
+        - APPROVED
+        - RELEASED
+        - ARCHIVED
+      ids_legados:
+        type: array
+        items:
+          type: string
+          pattern: ^\d+\.\d+$
+        uniqueItems: true
+    required:
+    - registro_id
+    - parent_id
+    - titulo
+    - tipo
+    - macroarea_principal
+    - origens
+    - conteudo_ou_uri
+    - owner
+    - version
+    - status_documental
+  cobertura:
+    type: object
+    additionalProperties: false
+    properties:
+      cobertura_id:
+        type: string
+        pattern: ^COV-[0-9]{6}$
+      registro_id:
+        type: string
+        pattern: ^REG-[0-9]{6}$
+      origem:
+        $ref: '#/$defs/localizacao'
+      camada:
+        type: string
+        enum:
+        - ACERVO_INTEGRAL
+        - MANUAL_REFERENCIA
+        - CADERNO_OPERACIONAL
+      destino: *id001
+      transformacao:
+        type: string
+        enum:
+        - PRESERVADO
+        - REESCRITO
+        - DIVIDIDO
+        - CONSOLIDADO
+      status:
+        type: string
+        enum:
+        - PROPOSTO
+        - VERIFICADO
+      evidencia_id:
+        type: string
+        pattern: ^EVD-[0-9]{6}$
+    required:
+    - cobertura_id
+    - registro_id
+    - origem
+    - camada
+    - destino
+    - transformacao
+    - status
+  relacao:
+    type: object
+    additionalProperties: false
+    properties:
+      relacao_id:
+        type: string
+        pattern: ^REL-[0-9]{6}$
+      origem_id:
+        type: string
+        pattern: ^REG-[0-9]{6}$
+      destino_id:
+        type: string
+        pattern: ^REG-[0-9]{6}$
+      tipo:
+        type: string
+        enum:
+        - DEPENDS_ON
+        - REFERENCIA
+        - DERIVA_DE
+        - DUPLICA
+        - CONFLITA_COM
+        - CONSOLIDA
+        - CLASSIFICA
+      justificativa: *id001
+      resolucao: *id001
+      status:
+        type: string
+        enum:
+        - ABERTA
+        - RESOLVIDA
+        - A DEFINIR
+    required:
+    - relacao_id
+    - origem_id
+    - destino_id
+    - tipo
+    - justificativa
+    - status
+  evidencia:
+    type: object
+    additionalProperties: false
+    properties:
+      evidencia_id:
+        type: string
+        pattern: ^EVD-[0-9]{6}$
+      registro_id:
+        type: string
+        pattern: ^REG-[0-9]{6}$
+      origem:
+        $ref: '#/$defs/localizacao'
+      natureza:
+        type: string
+        enum:
+        - CITADA
+        - VERIFICADA
+        - HIPOTESE
+      afirmacao: *id001
+      limites: *id001
+      metodo_verificacao: *id001
+      verificado_em:
+        type: string
+        format: date-time
+      verificado_por: *id001
+    required:
+    - evidencia_id
+    - registro_id
+    - origem
+    - natureza
+    - afirmacao
+    - limites
+    allOf:
+    - if:
+        properties:
+          natureza:
+            const: VERIFICADA
+      then:
+        required:
+        - metodo_verificacao
+        - verificado_em
+        - verificado_por
+  execucao:
+    type: object
+    additionalProperties: false
+    properties:
+      registro_id:
+        type: string
+        pattern: ^REG-[0-9]{6}$
+      escopo_wip_id: *id001
+      objetivo: *id001
+      input:
+        type: array
+        items: *id001
+        minItems: 1
+      acao: *id001
+      passos:
+        type: array
+        items: *id001
+        minItems: 1
+        maxItems: 3
+      output: *id001
+      concluido_quando: *id001
+      evidencia_ids:
+        type: array
+        items:
+          type: string
+          pattern: ^EVD-[0-9]{6}$
+        uniqueItems: true
+      proxima_acao: *id001
+      status:
+        type: string
+        enum:
+        - NOT_READY
+        - READY
+        - IN_PROGRESS
+        - BLOCKED
+        - DECLARED_DONE
+        - VERIFIED
+      automation_level:
+        type: string
+        enum:
+        - A0
+        - A1
+        - A2
+        - A3
+        - A4
+      bloqueio: *id001
+      handoff: *id001
+      resultado_aceite:
+        type: string
+        enum:
+        - NAO_VERIFICADO
+        - ATENDIDO
+        - NAO_ATENDIDO
+      prazo:
+        anyOf:
+        - type: string
+          format: date
+        - const: A DEFINIR
+      tempo_estimado_min:
+        anyOf:
+        - type: integer
+          minimum: 1
+        - type: 'null'
+    required:
+    - registro_id
+    - escopo_wip_id
+    - objetivo
+    - input
+    - acao
+    - passos
+    - output
+    - concluido_quando
+    - evidencia_ids
+    - proxima_acao
+    - status
+    - automation_level
+    - resultado_aceite
+    allOf:
+    - if:
+        properties:
+          status:
+            const: VERIFIED
+      then:
+        properties:
+          evidencia_ids:
+            minItems: 1
+          resultado_aceite:
+            const: ATENDIDO
+    - if:
+        properties:
+          status:
+            const: BLOCKED
+      then:
+        required:
+        - bloqueio
+  historico:
+    type: object
+    additionalProperties: false
+    properties:
+      evento_id:
+        type: string
+        pattern: ^EVT-[0-9]{6}$
+      registro_id:
+        type: string
+        pattern: ^REG-[0-9]{6}$
+      ocorrido_em:
+        type: string
+        format: date-time
+      ator: *id001
+      campo: *id001
+      antes: {}
+      depois: {}
+      motivo: *id001
+      evidencia_id:
+        type: string
+        pattern: ^EVD-[0-9]{6}$
+    required:
+    - evento_id
+    - registro_id
+    - ocorrido_em
+    - ator
+    - campo
+    - antes
+    - depois
+    - motivo
